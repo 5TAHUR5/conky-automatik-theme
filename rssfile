@@ -1,0 +1,72 @@
+double_buffer yes
+update_interval 2
+background yes
+
+own_window yes
+
+# own_window_type desktop
+own_window_hints undecorated,below,sticky,skip_taskbar,skip_pager
+own_window_type override
+own_window_argb_visual true
+own_window_argb_value 200
+out_to_console no
+own_window_transparent no
+own_window_class conky-semi
+use_xft yes
+xftfont cure:size=10
+
+#use_xft yes
+#xftfont Sansation:size=9
+xftfont Rounded Elegance:size=9
+font = Rounded Elegance:size=10
+xftalpha 0
+update_interval 2
+cpu_avg_samples 2
+net_avg_samples 2
+double_buffer yes
+maximum_width 500
+draw_shades no
+draw_outline no
+draw_borders no
+draw_graph_borders yes
+stippled_borders 1
+border_width 0
+default_color white
+default_shade_color white
+default_outline_color white
+alignment bottom_right
+
+use_spacer left
+no_buffers yes
+uppercase no
+
+color0 white
+
+color2 white
+color3 red
+
+
+pad_percents 2
+top_name_width 10
+minimum_size 320 100
+gap_x 15
+gap_y 20
+
+TEXT
+${image img/keyboard.png -p 0,0 -s 30x30}
+${offset 35}${font Good Times:size=12}${color Tan1}KEYBOARD BINDS ${color white}${hr 2}
+${color2}${font}open terminal - ${font Bitstream Vera Sans:size=10} ${color3}$mod+Enter
+${color2}${font}kill focused - ${font Bitstream Vera Sans:size=10}${color3}$mod+Shift+q
+${color2}${font}create place screenshot - ${font Bitstream Vera Sans:size=11}${color3}$mod+Shift+Print
+${color2}${font}toggle window - ${font Bitstream Vera Sans:size=10}${color3}$mod+f
+${color2}${font}rofi apps menu - ${font Bitstream Vera Sans:size=10}${color3}$mod+d
+${color2}${font}fullscreen window - ${font Bitstream Vera Sans:size=10}${color3}$mod+Shift+f
+${color2}${font}lock screen - ${font Bitstream Vera Sans:size=10}${color3}$mod+p
+${color2}${font}switch to workspace 1-8 - ${font Bitstream Vera Sans:size=10}${color3}$mod+1-8
+${color2}${font}send to workspace 1-8 -${font Bitstream Vera Sans:size=10} ${color3}$mod+Shift+1-8
+${color2}${font}navigate workspaces - ${font Bitstream Vera Sans:size=10}${color3}$mod+Ctrl+arrowkeys
+${color2}${font}rezize window - ${font Bitstream Vera Sans:size=10}${color3}$mod+r and arrowkeys
+${color2}${font}powermenu - ${font Bitstream Vera Sans:size=10}${color3}$mod+Ctrl+z
+
+${color2}${font}help - ${font Bitstream Vera Sans:size=10}${color3}$mod+Shift+h
+default mod=<Super>
